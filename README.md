@@ -40,6 +40,19 @@ Additionally, you may choose to set the following optional variables:
 ```yml
 show_downloads: ["true" or "false" (unquoted) to indicate whether to provide a download URL]
 google_analytics: [Your Google Analytics tracking ID]
+contactus: [any non-null value to render a contactus portion in the sidebar/header]
+contacts: [a dictionary of name/email pairs for person:email links in the contact page]
+  -
+    name: John
+    email: john@example.com
+  -
+   name: Jane
+   email: jame@example.com
+contactemail: ["generic@example.com" a generic emailto for the business]
+contactphone: ["(555)555-5555" a phone number]
+contactaddress: ["37 Fake Drive, Principality, etc" to indicate your business Address]
+contactfacebook: ["facebook.com/facebook" for example, non-prefixed URL to link to a facebook page]
+
 ```
 
 ### Stylesheet
