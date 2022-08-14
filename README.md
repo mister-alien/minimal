@@ -74,7 +74,7 @@ If you'd like to add your own custom styles:
 
     @import "{{ site.theme }}";
 
-```
+    ```
 3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
 
 *Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your stylesheet.*
