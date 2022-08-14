@@ -44,10 +44,10 @@
       </section>
       <footer>
         {% if site.github.is_project_page %}
-	<p><small>This project is maintained by <a href="{{ site.customownerurl | default:site.github.owner_url }}">{{ site.customownername | default:site.github.owner_name }}</a></small></p>
+	<p class="header"><small>This project is maintained by <a href="{{ site.customownerurl | default:site.github.owner_url }}">{{ site.customownername | default:site.github.owner_name }}</a></small></p>
         {% endif %}
 	{% if site.copyrightattribution %} 
-	<p><small>{{ site.copyrightattribution }}</small></p>
+	<p class="header"><small>{{ site.copyrightattribution }}</small></p>
       	{% endif %}
       </footer>
     </div>
