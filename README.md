@@ -40,6 +40,8 @@ Additionally, you may choose to set the following optional variables:
 ```yml
 show_downloads: ["true" or "false" (unquoted) to indicate whether to provide a download URL]
 google_analytics: [Your Google Analytics tracking ID]
+
+# Contact Us Sidebar pane
 contactus: [any non-null value to render a contactus portion in the sidebar/header]
 contacts: [a dictionary of name/email pairs for person:email links in the contact page]
   -
@@ -53,6 +55,11 @@ contactphone: ["(555)555-5555" a phone number]
 contactaddress: ["37 Fake Drive, Principality, etc" to indicate your business Address]
 contactfacebook: ["facebook.com/facebook" for example, non-prefixed URL to link to a facebook page]
 
+# Footer Vars
+customownername: ["john doe" a custom name instead of the default github user name]
+customownerurl: ["https://example.github.io/" a custom url instead of the default github page]
+
+copyrightattribution: ["Copyright (c) Contoso Inc 1998-" custom copyright string, blank by default]
 ```
 
 ### Stylesheet
@@ -66,7 +73,8 @@ If you'd like to add your own custom styles:
     ---
 
     @import "{{ site.theme }}";
-    ```
+
+```
 3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
 
 *Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your stylesheet.*
