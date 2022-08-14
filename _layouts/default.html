@@ -24,9 +24,9 @@
 	{% if site.contactus %}
 	<hr>
 	<h3>Contact</h3>
-	{% if site.contactemail %}<p>email: <a href="mailto:{{ site.contactemail }}">{{ site.contactemail }}</a></p>{% endif %}
-	{% if site.contactphone %}<p>phone: {{ site.contactphone }}</p>{% endif %}
-	{% if site.contactfacebook %}<p>facebook: <a href="{{ site.contactfacebook }}">{{ site.contactfacebook }}</a></p>{% endif %}
+	{% if site.contactemail %}<p><b>email:</b> <a href="mailto:{{ site.contactemail }}">{{ site.contactemail }}</a></p>{% endif %}
+	{% if site.contactphone %}<p><b>phone:</b> {{ site.contactphone }}</p>{% endif %}
+	{% if site.contactfacebook %}<p><b>facebook:</b> <a href="https://{{ site.contactfacebook }}">{{ site.contactfacebook }}</a></p>{% endif %}
 	{% endif %}
 
      </header>
