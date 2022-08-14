@@ -44,9 +44,11 @@
       </section>
       <footer>
         {% if site.github.is_project_page %}
-	<p><small>This project is maintained by <a href="{{ site.github.owner_url }}">cds labs</a></small></p>
+	<p><small>This project is maintained by <a href="{{ site.customownerurl | default:site.github.owner_url }}">{{ site.customownername | default:site.github.owner_name }}</a></small></p>
         {% endif %}
-        <p><small>Copyright © Macleod & Peters Counselling, 2022-</small></p>
+	{% if site.copyrightattribtion %} 
+	<p><small>{{ site.copyrightattribution }}</small></p>
+      	{% endif %}
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
